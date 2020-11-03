@@ -1,0 +1,30 @@
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.tooltipText {
+  position: absolute;
+  top: -50px;
+  border: 2px solid var(--color-primary);
+  border-radius: 5px;
+  background-color: var(--color-others);
+  text-transform: uppercase;
+  color: white;
+  padding: 5px;
+  font-size: 11px;
+  letter-spacing: 2px;
+}
+
+.btn .tooltipText::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 7.5px;
+  border-style: solid;
+  border-color: var(--color-primary) transparent transparent transparent;
+}

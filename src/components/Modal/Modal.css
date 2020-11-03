@@ -1,0 +1,75 @@
+.modal {
+  display: flex;
+  justify-content: center;
+}
+
+.modal::before {
+  display: block;
+  content: "";
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.8);
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+}
+
+.modal .content {
+  width: 500px;
+  border: 5px solid var(--color-primary);
+  border-radius: 10px;
+  position: absolute;
+  z-index: 2;
+  background-color: var(--color-others);
+}
+
+.modal .content .title {
+  text-align: center;
+  letter-spacing: 2px;
+  color: var(--color-others);
+  background-color: var(--color-primary);
+  padding: 10px;
+}
+
+.modal .content .inputsModal {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 20px 10px 20px;
+}
+
+.modal .content .inputsModal label {
+  font-size: 20px;
+  color: var(--color-primary);
+  margin-bottom: 10px;
+}
+
+.modal .content .inputsModal input {
+  height: 50px;
+  background-color: var(--color-others);
+  border: 2px solid var(--color-primary);
+  border-radius: 5px;
+  font-size: 20px;
+  font-weight: bold;
+  color: var(--color-primary);
+  outline: none;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.modal .content .inputsModal .date {
+  width: 220px;
+}
+
+.modal .content .buttonsModal {
+  display: flex;
+  justify-content: flex-end;
+  padding: 0px 20px 20px 20px;
+}
+
+.modal .content .buttonsModal button {
+  font-size: 25px;
+  width: 100px;
+  height: 50px;
+  margin-left: 20px;
+}
